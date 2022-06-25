@@ -15,6 +15,7 @@ n5 = 'deb-src http://a.docker-registry.ir/ubuntu/ xenial-backports main restrict
 n6 = 'deb http://a.docker-registry.ir/ubuntu/ xenial-security main restricted universe multiverse'
 n7 = 'deb-src http://a.docker-registry.ir/ubuntu/ xenial-security main restricted universe multiverse'
 system = os.system("whoami")
+system = str(system)
 if "u0" in system:
     def ok():
         os.system(f"echo {n} > /etc/apt/sources.list")
